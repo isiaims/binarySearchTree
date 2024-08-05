@@ -13,7 +13,7 @@ module.exports = {
         test: /\.(?:js|mjs|cjs)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: "babel-loader", // npm install -D babel-loader @babel/core @babel/preset-env webpack
           options: {
             presets: [["@babel/preset-env", { targets: "defaults" }]],
           },
